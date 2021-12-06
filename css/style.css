@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 .seccion-uno {
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 .seccion-uno .carousel-inner {
   height: 350px;
@@ -9,7 +9,7 @@
 /* Variables */
 .main-envios {
   font-family: "Josefin Sans", sans-serif;
-  background-color: sandybrown;
+  background-color: #ffc594;
   padding-top: 10px;
   border-top: 2px solid black;
 }
@@ -39,8 +39,14 @@
   color: black;
 }
 
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-envios {
-  background-color: grey;
+  background-color: #bebcbc;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   text-align: center;
@@ -97,11 +103,11 @@
 }
 
 .footer {
-  background-color: grey;
+  background-color: #bebcbc;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   text-align: center;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 .footer .logo-face {
   width: 50px;
@@ -117,21 +123,13 @@
 }
 .footer .logo-what {
   width: 50px;
-  justify-content: left;
 }
 .footer .copyright {
   justify-content: center;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
   margin-top: 20px;
   background-color: beige;
   font-size: 16px;
-}
-
-.logo-what-fixed {
-  width: 60px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
 }
 
 .logo-what-fixed:hover {
@@ -140,9 +138,9 @@
 }
 
 .main-productos {
-  background-color: sandybrown;
+  background-color: #ffc594;
   padding-top: 20px;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 }
 
 .vela-bowie, .vela-joplin-productos, .vela-aretha, .difusor-productos {
@@ -153,22 +151,22 @@
 
 .vela-bowie:hover {
   transition: all 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .vela-joplin-productos:hover {
   transition: all 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .vela-aretha:hover {
   transition: all 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .difusor-productos:hover {
   transition: all 0.5s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .descripcion-bowie-productos, .descripcion-joplin-productos, .descripcion-aretha-productos, .descripcion-difusor-productos {
@@ -177,7 +175,7 @@
 
 .main-contacto {
   font-family: "Josefin Sans", sans-serif;
-  background-color: sandybrown;
+  background-color: #ffc594;
   padding: 20px;
   border-top: 2px solid black;
   display: flex;
