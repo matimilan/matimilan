@@ -32,7 +32,12 @@
         }
 
 }
-
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .footer-envios {
     background-color: nth($colores, 4);
     //padding: 25px;
