@@ -1,37 +1,50 @@
 .main-productos {
     background-color: nth($colores, 2);
     padding-top: 20px;
+    padding-bottom: 10px;
     border-top: 1px solid black;
+
 }
-.vela-bowie, .vela-joplin-productos, .vela-aretha, .difusor-productos{
+.vela-bowie, 
+.vela-joplin-productos, 
+.vela-aretha, 
+.difusor-productos, 
+.vela-amy,
+.difusor2-productos,
+.vela-guns,
+.vela-cerati {
     width: auto;
     border-radius: 10px;
     
     margin-bottom: 20px;
 
 }
-.vela-bowie:hover {
+
+.vela-bowie:hover, 
+.vela-joplin-productos:hover, 
+.vela-aretha:hover,
+.difusor-productos:hover, 
+.vela-amy:hover,
+.difusor2-productos:hover,
+.vela-guns:hover,
+.vela-cerati:hover {
     transition: all 0.5s;
     transform: scale(1.05);
 }
 
-.vela-joplin-productos:hover {
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-
-.vela-aretha:hover {
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-
-.difusor-productos:hover {
-    transition: all 0.5s;
-    transform: scale(1.05);
-}
-
-.descripcion-bowie-productos, .descripcion-joplin-productos, .descripcion-aretha-productos, .descripcion-difusor-productos {
+.descripcion-bowie-productos,
+.descripcion-joplin-productos, 
+.descripcion-aretha-productos, 
+.descripcion-difusor-productos, 
+.descripcion-amy-productos,
+.descripcion-difusor2-productos,
+.descripcion-vela-guns,
+.descripcion-vela-cerati {
     font-family: $fuente;
+}
+.sin-stock {
+    font-size: 20px;
+    font-weight: bold;
 }
 
     

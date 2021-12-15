@@ -1,0 +1,121 @@
+@media (min-width: 100px) and (max-width: 1080px) {
+
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    .logo-cabecera {
+        width: 150px;
+    }
+    .menu-nav {
+        width: 40%;
+        position: relative;
+        left: -2%;
+    }
+    .buscar-nav, .carrito {
+        display: none;
+    }
+    .seccion-uno {
+        padding-top: 15%;
+        width: auto;
+        background-color: black;
+    }
+    .main-productos {
+        background-color: nth($colores, 2);
+        border-top: 1px solid black;
+    }    
+.vela-bowie, 
+.vela-joplin-productos, 
+.vela-aretha, 
+.difusor-productos, 
+.vela-amy,
+.difusor2-productos,
+.vela-guns,
+.vela-cerati {
+    width: auto;
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+
+}
+
+.vela-bowie:hover, 
+.vela-joplin-productos:hover, 
+.vela-aretha:hover,
+.difusor-productos:hover, 
+.vela-amy:hover,
+.difusor2-productos:hover,
+.vela-guns:hover,
+.vela-cerati:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+}
+
+.descripcion-bowie-productos,
+.descripcion-joplin-productos, 
+.descripcion-aretha-productos, 
+.descripcion-difusor-productos, 
+.descripcion-amy-productos,
+.descripcion-difusor2-productos,
+.descripcion-vela-guns,
+.descripcion-vela-cerati {
+    font-family: $fuente;
+    font-size: 15px;
+}
+.sin-stock {
+    font-size: 15px;
+    font-weight: bold;
+}
+h2 {
+    width: 100%;
+    position: relative;
+    .img-env-1 {
+        display: none;
+    }
+}
+.texto-main {
+    font-size: 12px;
+    padding: 10px;
+    line-height : 20px;
+    
+}
+
+.footer {
+         font-size: 12px;
+
+        .logo-correo {
+            width: 25px;
+            position: relative;
+            left: 10%;
+        }
+        .logo-face {
+            width: 30px;
+        }
+        .link-insta {
+            text-decoration: none;
+            .logo-instagram {
+                width: 25px;
+            }
+        }    
+        .logo-twit2 {
+            width: 20px;
+        }
+        .logo-what {
+            width: 25px;
+            position: relative;
+            left: -20%;
+
+        }
+        .copyright {
+            justify-content: center;
+            border-top: 1px solid black;
+            margin-top: 20px;
+            background-color: nth($colores, 1);
+            font-size: 10px;
+
+        }
+
+         }
+
+}

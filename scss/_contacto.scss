@@ -7,10 +7,6 @@
             display: flex;
             justify-content: center;
             font-weight: bold;  
-            .mail-contacto {
-                color: black;
-                text-decoration: none;
-            }
                          
         }
         .section-main-contacto {
@@ -20,11 +16,19 @@
                 display: flex;
                 justify-content: center;
                 margin-top: 10px;
+                
             }
         }
 } 
 .contacto {
     margin-top: 30px;
     margin-bottom: 40px;
+}
+.logo-what-contacto {
+    width: 70px;
+}
+.mail-contacto {
+    color: black;
+    text-decoration: none;
 }
 
