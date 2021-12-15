@@ -6,6 +6,11 @@
   height: 350px;
 }
 
+.boton-ver-prod {
+  display: flex;
+  justify-content: center;
+}
+
 /* Variables */
 .main-envios {
   font-family: "Josefin Sans", sans-serif;
@@ -13,11 +18,14 @@
   padding-top: 10px;
   border-top: 2px solid black;
 }
+.main-envios .imagen-envios {
+  width: 120px;
+}
 .main-envios .titulo-main {
   text-align: center;
 }
 .main-envios .titulo-main h2 {
-  font-size: 45px;
+  font-size: 60px;
   padding: 20px;
   padding-bottom: 10px;
 }
@@ -83,10 +91,6 @@
   justify-content: center;
   font-weight: bold;
 }
-.main-contacto .h4 .mail-contacto {
-  color: black;
-  text-decoration: none;
-}
 .main-contacto .section-main-contacto {
   width: 100%;
   justify-content: center;
@@ -102,12 +106,27 @@
   margin-bottom: 40px;
 }
 
+.logo-what-contacto {
+  width: 70px;
+}
+
+.mail-contacto {
+  color: black;
+  text-decoration: none;
+}
+
 .footer {
   background-color: #bebcbc;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   text-align: center;
   border-top: 1px solid black;
+}
+.footer .logo-correo {
+  width: 45px;
+  position: relative;
+  top: 1px;
+  left: 70px;
 }
 .footer .logo-face {
   width: 50px;
@@ -123,6 +142,9 @@
 }
 .footer .logo-what {
   width: 50px;
+  position: relative;
+  top: -10px;
+  left: -75px;
 }
 .footer .copyright {
   justify-content: center;
@@ -132,45 +154,57 @@
   font-size: 16px;
 }
 
-.logo-what-fixed:hover {
-  transition: all 0.5s;
-  transform: scale(1.1);
+.nav-footer {
+  font-size: 18px;
+  text-align: center;
 }
 
 .main-productos {
   background-color: #ffc594;
   padding-top: 20px;
+  padding-bottom: 10px;
   border-top: 1px solid black;
 }
 
-.vela-bowie, .vela-joplin-productos, .vela-aretha, .difusor-productos {
+.vela-bowie,
+.vela-joplin-productos,
+.vela-aretha,
+.difusor-productos,
+.vela-amy,
+.difusor2-productos,
+.vela-guns,
+.vela-cerati {
   width: auto;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.vela-bowie:hover {
+.vela-bowie:hover,
+.vela-joplin-productos:hover,
+.vela-aretha:hover,
+.difusor-productos:hover,
+.vela-amy:hover,
+.difusor2-productos:hover,
+.vela-guns:hover,
+.vela-cerati:hover {
   transition: all 0.5s;
   transform: scale(1.05);
 }
 
-.vela-joplin-productos:hover {
-  transition: all 0.5s;
-  transform: scale(1.05);
-}
-
-.vela-aretha:hover {
-  transition: all 0.5s;
-  transform: scale(1.05);
-}
-
-.difusor-productos:hover {
-  transition: all 0.5s;
-  transform: scale(1.05);
-}
-
-.descripcion-bowie-productos, .descripcion-joplin-productos, .descripcion-aretha-productos, .descripcion-difusor-productos {
+.descripcion-bowie-productos,
+.descripcion-joplin-productos,
+.descripcion-aretha-productos,
+.descripcion-difusor-productos,
+.descripcion-amy-productos,
+.descripcion-difusor2-productos,
+.descripcion-vela-guns,
+.descripcion-vela-cerati {
   font-family: "Josefin Sans", sans-serif;
+}
+
+.sin-stock {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .main-contacto {
@@ -221,6 +255,126 @@ h1 {
   width: 50px;
 }
 
+@media (min-width: 100px) and (max-width: 1080px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .logo-cabecera {
+    width: 150px;
+  }
+
+  .menu-nav {
+    width: 40%;
+    position: relative;
+    left: -2%;
+  }
+
+  .buscar-nav, .carrito {
+    display: none;
+  }
+
+  .seccion-uno {
+    padding-top: 15%;
+    width: auto;
+    background-color: black;
+  }
+
+  .main-productos {
+    background-color: #ffc594;
+    border-top: 1px solid black;
+  }
+
+  .vela-bowie,
+.vela-joplin-productos,
+.vela-aretha,
+.difusor-productos,
+.vela-amy,
+.difusor2-productos,
+.vela-guns,
+.vela-cerati {
+    width: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .vela-bowie:hover,
+.vela-joplin-productos:hover,
+.vela-aretha:hover,
+.difusor-productos:hover,
+.vela-amy:hover,
+.difusor2-productos:hover,
+.vela-guns:hover,
+.vela-cerati:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+  }
+
+  .descripcion-bowie-productos,
+.descripcion-joplin-productos,
+.descripcion-aretha-productos,
+.descripcion-difusor-productos,
+.descripcion-amy-productos,
+.descripcion-difusor2-productos,
+.descripcion-vela-guns,
+.descripcion-vela-cerati {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+  }
+
+  .sin-stock {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  h2 {
+    width: 100%;
+    position: relative;
+  }
+  h2 .img-env-1 {
+    display: none;
+  }
+
+  .texto-main {
+    font-size: 12px;
+    padding: 10px;
+    line-height: 20px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+  .footer .logo-correo {
+    width: 25px;
+    position: relative;
+    left: 10%;
+  }
+  .footer .logo-face {
+    width: 30px;
+  }
+  .footer .link-insta {
+    text-decoration: none;
+  }
+  .footer .link-insta .logo-instagram {
+    width: 25px;
+  }
+  .footer .logo-twit2 {
+    width: 20px;
+  }
+  .footer .logo-what {
+    width: 25px;
+    position: relative;
+    left: -20%;
+  }
+  .footer .copyright {
+    justify-content: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    background-color: beige;
+    font-size: 10px;
+  }
+}
 body {
   overflow-x: hidden;
 }
